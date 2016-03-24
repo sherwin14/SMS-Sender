@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_recent_violator"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="1dp"
+    android:layout_margin="2dp">
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp">
+        <RelativeLayout
+            android:padding="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#44f57f17">
+            <ImageView
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:src="@drawable/pussy"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="3dp"
+                    android:text="Hesam"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/txtName"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="3dp"
+                    android:text="0"
+                    android:textColor="#757575"
+                    android:id="@+id/txtCount"
+                    android:layout_alignBaseline="@+id/txtName"
+                    android:layout_alignBottom="@+id/txtName"
+                    android:layout_toRightOf="@+id/txtName" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="3dp"
+                    android:text="Thanks, you are right. but i saw this: Deprecated: This attribute is deprecated and is replaced by the textMultiLine flag in the inputType attribute. Use caution when altering existing layouts, as the default value of singeLine is false (multi-line mode), but if you specify any value for inputType, the default is single-line mode. (If both singleLine and inputType attributes are found, the inputType flags will override the value of singleLine."
+                    android:textColor="#757575"
+                    android:id="@+id/body"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/txtDate"
+                    android:layout_toStartOf="@+id/txtDate"
+                    android:ellipsize="end"
+                    android:maxLines="2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="11:10 am"
+                    android:textSize="10dp"
+                    android:textColor="#757575"
+                    android:id="@+id/txtDate"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
